@@ -1,0 +1,98 @@
+.prime {
+    width: 75%;
+    background-color: var(--main-color);
+    color: #fff;
+    position: relative;
+    top: 13rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 10px 1px 0 var(--main-color);
+}
+
+.prime>h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    mix-blend-mode: soft-light;
+    /* font-stretch: expanded; */
+    /* font-feature-settings: inherit; */
+    font-style: oblique;
+    /* font-kerning: normal; */
+    font-variant: petite-caps;
+    font-size: xxx-large;
+}
+
+.prime>h4 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.prime>h4 span {
+    color: #306ce4;
+}
+
+.prime p {
+    font-size: 1.2rem;
+    margin-top: -.5rem;
+}
+
+.prime a {
+
+    background-color: #de8301;
+    color: var(--main-color);
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 0.3rem;
+    transition: var(--main-transition);
+}
+
+.prime a:hover {
+    background-color: var(--btn-color-hover);
+}
+
+@media screen and (max-width: 992px) {
+    .prime {
+        top: 15rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .prime {
+        top: 17rem;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .prime {
+        top: 18rem;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .prime {
+        top: 17rem;
+        width: 85%;
+        max-height: 85vh;
+    }
+
+    .prime>h3 {
+        font-size: 2rem;
+    }
+
+    .prime>h4 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .prime a {
+        padding: 0.8rem 1rem;
+    }
+}

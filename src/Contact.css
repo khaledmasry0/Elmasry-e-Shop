@@ -1,0 +1,103 @@
+.main-contact {
+    height: 100%;
+}
+
+.contact {
+    width: 75%;
+    background-color: var(--main-color);
+    color: #fff;
+    position: relative;
+    top: 12.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 10px 1px 0 var(--main-color);
+}
+
+.contact header h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    mix-blend-mode: soft-light;
+    /* font-stretch: expanded; */
+    /* font-feature-settings: inherit; */
+    font-style: oblique;
+    /* font-kerning: normal; */
+    font-variant: petite-caps;
+    font-size: xxx-large;
+}
+
+.contact header p {
+    font-size: 1.2rem;
+    margin-top: -.9rem;
+    color: #eee;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__container {
+    display: flex;
+    /* place-items: center; */
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+}
+
+.contact__wrapper {
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact__wrapper a {
+    background: var(--main-color);
+    font-size: 2.5rem;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    color: #ebb759;
+    /* padding: 2rem; */
+    padding: 1rem 1.5rem .5rem;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact__wrapper a:hover {
+    background: transparent;
+    border-color: var(--color-gray-100);
+    /* color: var(--main-color); */
+    border-color: #ebb759;
+}
+
+@media screen and (max-width: 600px) {
+    .contact__wrapper {
+        gap: 1.5rem;
+    }
+
+    .main-contact {
+        height: 100%;
+        position: relative;
+        top: 3rem;
+    }
+
+    .contact__wrapper a {
+        padding: 1rem;
+        padding-bottom: .8rem;
+        font-size: 2rem;
+        border-radius: 1.5rem;
+    }
+
+    .contact {
+        width: 90%;
+    }
+}

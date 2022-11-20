@@ -1,0 +1,137 @@
+.header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* overflow: hidden; */
+    justify-content: space-between;
+}
+
+.header>a {
+    height: 100%;
+}
+
+.header__logo {
+    width: 12rem;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: -1.4rem;
+}
+
+
+.header__optionLineOne {
+    font-size: 0.8rem;
+}
+
+.header__optionLineTwo {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+
+    transform: translateY(5px);
+    color: white;
+}
+
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav>a {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header-menu {
+    color: #fff;
+    display: grid;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.header-menu svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    animation: showNav 1.5s cubic-bezier(0, 0.8, 0.71, 1.28);
+    background-color: var(--main-color);
+    position: absolute;
+    right: 1rem;
+    top: 4.5rem;
+    z-index: 5000;
+    width: 30%;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-radius: 1.5rem;
+}
+
+.nav-toggle .header__optionBasket {
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: -.5rem;
+    /* left: 1rem; */
+    transform: translateX(.4rem);
+}
+
+.nav-toggle .header__option {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:500px) {
+    .nav-toggle {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .header__nav>a {
+        display: none;
+    }
+
+    .header__logo {
+        margin-left: -1rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .header-menu {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}
+
+@keyframes showNav {
+    from {
+        right: -10rem;
+    }
+
+    to {
+        right: 1rem;
+    }
+}
