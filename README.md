@@ -1,4 +1,4 @@
-<h1 align="center"> eShop </h1>
+<h1 align="center"> El Masry </h1>
 
 <h4 align="center"> an e-commerce website that you can buy products, I take most of the ideas from amazon website and that helps me alot to make this project more fanctionality, it has  authantication, e-pay and more features
 
